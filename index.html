@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Persona</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload="mostrarPersonas()">
+    <div class="contenedor" id="cabecero">
+        <h1>Listado Personas</h1>
+    </div>
+
+    <div class="contenedor">
+        <div class="elemento">
+            <!--Vamos a manejar de manera dinámica la lista de personas desde js, se agregará dinámicamente un li por cada persona que haya en la lista-->
+            <ul id="personas">
+            </ul>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div style="text-align: center;">
+            <button style="cursor: pointer" onclick="agregarPersona()">+</button>
+        </div>
+        <form action="" id="formulario">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="apellido" placeholder="Apellido">
+        </form>
+    </div>
+
+    <script src="js/persona.js"></script>   <!--Se debe agregar primero el script que tenga menos dependencia con otros scripts-->
+    <script src="js/app.js"></script>
+</body>
+</html>
